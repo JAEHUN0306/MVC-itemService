@@ -1,4 +1,4 @@
-package hello.item_service.domain.item;
+package hello.itemservice.domain.item;
 
 import org.springframework.stereotype.Repository;
 
@@ -11,7 +11,7 @@ import java.util.Map;
 public class ItemRepository {
 
     private static final Map<Long, Item> store = new HashMap<>();
-    private static long sequence = 0L;
+    private static Long sequence = 0L;
 
     public Item save(Item item) {
         item.setId(++sequence);
